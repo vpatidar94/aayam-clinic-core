@@ -1,0 +1,28 @@
+{
+  "name": "aayam-clinic-core",
+  "version": "0.0.1",
+  "description": "aayam-clinic-core js module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "publishX": "publish --access=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vpatidar94/aayam-clinic-core.git"
+  },
+  "keywords": [
+    "codeartist"
+  ],
+  "author": "Vinay Patidar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vpatidar94/aayam-clinic-core/issues"
+  },
+  "homepage": "https://github.com/vpatidar94/aayam-clinic-core#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "typescript": "^5.1.6"
+  }
+}
