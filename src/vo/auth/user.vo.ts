@@ -14,8 +14,8 @@ export interface UserVo extends PersonBaseVo {
 //    @Deprecated("emp and cust field should take care")
     // role: string | null | undefined;
 
-    cust: Array<AclCustVo>; // brId customer of org e.g. {brId1: true, brId2: false, brId3: true}
-    emp: Array<AclVo>; // brId -OR- AppId -> employee of >> account link to company/org/agent/corp/school
+    cust: { [key: string]: AclCustVo }; // brId customer of org e.g. {brId1: true, brId2: false, brId3: true}
+    emp: { [key: string]: AclVo }; // brId -OR- AppId -> employee of >> account link to company/org/agent/corp/school
 
     crtBy: string | null | undefined;
     created: Date;

@@ -1,0 +1,6 @@
+export const EMP_ROLE = {
+    GENERAL_STAFF: 'GENERAL_STAFF',
+    DOCTOR: 'DOCTOR',
+    LAB_STAFF: 'LAB_STAFF',
+    CHEMIST: 'CHEMIST'
+};

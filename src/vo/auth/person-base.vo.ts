@@ -1,3 +1,5 @@
+import { AddressVo } from "../address.vo";
+
 export interface PersonBaseVo {
     _id: string;
 
@@ -17,4 +19,6 @@ export interface PersonBaseVo {
     doA: Date; // Date of Anniversary
     poB: string | null | undefined; // Place of Birth
     gender: string | null | undefined; // Gender
+    address: AddressVo | null | undefined;
+
 }
