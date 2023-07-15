@@ -14,3 +14,6 @@ export * from './user-access.dto';
 export * from './user-password.dto';
 export * from './user-emp-department.dto';
 export * from './user-cust-type.dto';
+export * from './user-emp.dto';
+export * from './user-access-detail.dto';
+
