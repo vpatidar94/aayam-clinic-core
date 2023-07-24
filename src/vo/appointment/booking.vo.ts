@@ -9,13 +9,13 @@ export interface BookingVo {
 
   orgId: string;
   brId: string;
-  userId: string | UserVo; // patient
+  user: string; // patient
 
   no: string;
   bookingDate: Date;
 
   chargable: boolean;
-  dr: string | UserVo; // Doctor Id
+  dr: Array<string>; // Doctor Id
   referedBy: string;
 
   status: string; // OrderStatus - [HOLD, WIP, DELETE]

@@ -3,13 +3,13 @@ import { UserVo } from "../auth";
 export interface ItemVo {
   _id: string;
 
-  org: string;
-  br: string;
+  orgId: string;
+  brId: string;
 
   name: string;
   description: string;
 
-  user: string | UserVo; // Docter id null if no docter
+  userId: string | UserVo; // Docter id null if no docter
 
   price: number; // Retail Selling Price (Unit Price)
   taxInclusive: boolean; // if true Price is tax inclusive
@@ -19,4 +19,9 @@ export interface ItemVo {
   sgst: number;
 
   active: boolean;
+}
+
+
+export interface ItemPopulateVo extends ItemVo {
+  user?: UserVo;
 }
