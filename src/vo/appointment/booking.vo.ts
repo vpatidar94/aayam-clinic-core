@@ -1,4 +1,3 @@
-import { UserVo } from "../auth";
 import { ObservationVo } from "./observation.vo";
 import { OrderItemVo } from "./order-item.vo";
 import { PrescriptionVo } from "./prescription.vo";
@@ -9,14 +8,24 @@ export interface BookingVo {
 
   orgId: string;
   brId: string;
-  user: string; // patient
+  user: string; // patient id 
 
   no: string;
+  patientNo: string;
+
   bookingDate: Date;
+  timeSlot: string;
 
   chargable: boolean;
+
   dr: Array<string>; // Doctor Id
+  drExt: Array<string>;
   referedBy: string;
+  complaint: Array<string>;
+  diagnosis: Array<string>;
+
+  type: string; // OPD, APPOINTMENT, ADMISSION, INVESTIGATION, EMERGENCY
+
 
   status: string; // OrderStatus - [HOLD, WIP, DELETE]
   txStatus: string; // OrderStatusTx - [UNPAID, PAID, PAID_PARTLY, VOID]
@@ -50,5 +59,7 @@ export interface BookingVo {
   prescription: Array<PrescriptionVo>;
 
   instruction: Array<string>;
+
+  nextVisitDate: Date;
 
 }

@@ -4,7 +4,7 @@ export class BookingUtility {
 
     /* ************************************ Static ************************************ */
     /* ************************************ Booking Service Item ********************************* */
-    public applyDiscountAndCalPrice(booking: BookingVo): void {
+    public static applyDiscountAndCalPrice(booking: BookingVo): void {
         // Step 1: calc Sub Total
         const subTotal = this.getSubTotal(booking);
         booking.subTotal = subTotal;
@@ -13,10 +13,10 @@ export class BookingUtility {
         booking.totalDue = subTotal + (booking.tax ?? 0) - (booking.discount ?? 0);
     }
 
-    public updateBookingItem(itemAdded: boolean, booking: BookingVo, item: ItemVo, qty: number, note: string): void {
+    public static updateBookingItem(itemAdded: boolean, booking: BookingVo, item: ItemVo, qty: number, note: string): void {
         let indexMatchItem = -1;
         if (booking?.items?.length > 0) {
-            indexMatchItem = booking?.items?.findIndex((row: OrderItemVo) => row.item?._id === item._id);
+            indexMatchItem = booking?.items?.findIndex((row: OrderItemVo) => !row?.openItem && row.item?._id === item._id);
         }
         if (itemAdded) {
             if (indexMatchItem < 0) {
@@ -43,13 +43,13 @@ export class BookingUtility {
         }
     }
 
-    public updateBookingItemAndCalcTotal(itemAdded: boolean, booking: BookingVo, item: ItemVo, qty: number, note: string): void {
+    public static updateBookingItemAndCalcTotal(itemAdded: boolean, booking: BookingVo, item: ItemVo, qty: number, note: string): void {
         this.updateBookingItem(itemAdded, booking, item, qty, note);
         this.applyDiscountAndCalPrice(booking);
     }
 
     /* ************************************ Private Methods ************************************ */
-    public getSubTotal(booking: BookingVo): number {
+    public static getSubTotal(booking: BookingVo): number {
         let subTotal = 0;
         booking.items?.forEach(it => {
             subTotal += it.priceBase * it.qty;

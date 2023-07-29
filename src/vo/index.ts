@@ -5,3 +5,5 @@ export * from './cust-type.vo';
 export * from './address.vo';
 export * from './org.vo';
 export * from './appointment';
+export * from './key-value.vo';
+export * from './metadata-org.vo';

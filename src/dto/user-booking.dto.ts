@@ -1,4 +1,4 @@
-import { BookingVo, UserVo } from "../vo";
+import { BookingVo, InvestigationVo, UserVo } from "../vo";
 
 export interface UserBookingDto {
     booking: BookingVo;

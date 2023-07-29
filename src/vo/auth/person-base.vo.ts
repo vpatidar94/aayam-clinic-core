@@ -8,6 +8,8 @@ export interface PersonBaseVo {
     nameM: string | null | undefined;
     nameL: string | null | undefined;
 
+    fatherName: string | null | undefined;
+
     cell: string;
     email: string | null | undefined;
     cell2: string;
@@ -20,5 +22,7 @@ export interface PersonBaseVo {
     poB: string | null | undefined; // Place of Birth
     gender: string | null | undefined; // Gender
     address: AddressVo | null | undefined;
+
+    age: number | null | undefined;
 
 }

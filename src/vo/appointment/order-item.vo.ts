@@ -1,7 +1,7 @@
 import { ItemVo } from "./item.vo";
 
 export interface OrderItemVo {
-  item: ItemVo;
+  item: ItemVo | null;
   qty: number; // Quantity
 
   note: string; //Special instructions, Extra instructions - List any special requests
@@ -18,4 +18,7 @@ export interface OrderItemVo {
   igst: number;
   cgst: number;
   sgst: number;
+
+  openItem: boolean;
+  name: string;
 }
