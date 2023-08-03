@@ -1,3 +1,4 @@
+import { UserVo } from "../auth";
 import { ObservationVo } from "./observation.vo";
 import { OrderItemVo } from "./order-item.vo";
 import { PrescriptionVo } from "./prescription.vo";
@@ -27,7 +28,7 @@ export interface BookingVo {
   type: string; // OPD, APPOINTMENT, ADMISSION, INVESTIGATION, EMERGENCY
 
 
-  status: string; // OrderStatus - [HOLD, WIP, DELETE]
+  status: string; // OrderStatus - [PENDING, CONFIRMED, COMPLETED]
   txStatus: string; // OrderStatusTx - [UNPAID, PAID, PAID_PARTLY, VOID]
   items: Array<OrderItemVo>;
   tx: Array<TxVo>;
@@ -62,4 +63,9 @@ export interface BookingVo {
 
   nextVisitDate: Date;
 
+}
+
+export interface BookingPopulateVo extends BookingVo {
+  patient: UserVo;
+  drList: Array<UserVo>;
 }

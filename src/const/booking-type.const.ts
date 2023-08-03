@@ -6,7 +6,6 @@ export const BOOKING_TYPE = {
     EMERGENCY: 'EMERGENCY'
 };
 
-// OPD, APPOINTMENT, ADMISSION, INVESTIGATION, EMERGENCY
 export const BOOKING_TYPE_NAME = {
     OPD: 'OPD',
     APPOINTMENT: 'Appointement',
@@ -16,6 +15,7 @@ export const BOOKING_TYPE_NAME = {
 };
 
 export const BOOKING_TYPE_LIST = [
+
     {
         id: BOOKING_TYPE.OPD,
         name: BOOKING_TYPE_NAME.OPD

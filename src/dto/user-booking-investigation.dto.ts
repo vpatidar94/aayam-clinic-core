@@ -1,6 +1,7 @@
-import { InvestigationVo } from "../vo";
-import { UserBookingDto } from "./user-booking.dto";
+import { BookingVo, InvestigationVo, UserVo } from "../vo";
 
-export interface UserBookingInvestigationDto extends UserBookingDto {
-    investigation: InvestigationVo;
+export interface UserBookingInvestigationDto {
+    bookingList: Array<BookingVo>;
+    investigation: Array<InvestigationVo>;
+    user: UserVo;
 }
