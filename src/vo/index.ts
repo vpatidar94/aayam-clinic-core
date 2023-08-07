@@ -7,3 +7,4 @@ export * from './org.vo';
 export * from './appointment';
 export * from './key-value.vo';
 export * from './metadata-org.vo';
+export * from './department.vo';

@@ -6,3 +6,4 @@ export * from './observation-param.const';
 export * from './booking-type.const';
 export * from './booking-status.const';
 export * from './health-params.const';
+export * from './department-status.const';
