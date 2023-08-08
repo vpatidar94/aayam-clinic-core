@@ -10,9 +10,9 @@ export interface OrgVo {
 
     // Corporate Legal Information
     nameShort: string | null | undefined;
-    name: string | null | undefined; // Legal Name
+    name: string; // Legal Name
     nameHi: string | null | undefined; // native language
-    codeSuffix: string | null | undefined; //3 character suffix of org
+    codeSuffix: string; //3 character suffix of org
 
     type: string | null | undefined; // Type Clinic/Hospital
 
