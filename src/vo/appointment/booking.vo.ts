@@ -15,6 +15,7 @@ export interface BookingVo {
   patientNo: string;
 
   bookingDate: Date;
+  shift: string; // EVENING, MORNING
   timeSlot: string;
 
   chargable: boolean;
@@ -25,7 +26,8 @@ export interface BookingVo {
   complaint: Array<string>;
   diagnosis: Array<string>;
 
-  type: string; // OPD, APPOINTMENT, ADMISSION, INVESTIGATION, EMERGENCY
+  type: string; // PATIENT, APPOINTMENT
+  subType: string; // OPD, ADMISSION, INVESTIGATION, EMERGENCY
 
 
   status: string; // OrderStatus - [PENDING, CONFIRMED, COMPLETED]
