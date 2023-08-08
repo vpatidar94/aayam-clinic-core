@@ -12,6 +12,7 @@ export interface OrgVo {
     nameShort: string | null | undefined;
     name: string | null | undefined; // Legal Name
     nameHi: string | null | undefined; // native language
+    codeSuffix: string | null | undefined; //3 character suffix of org
 
     type: string | null | undefined; // Type Clinic/Hospital
 
