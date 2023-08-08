@@ -6,4 +6,5 @@ export interface MetadataOrgVo {
 
     no: number;
     patientNo: number;
+    departmentNo : number
 }
