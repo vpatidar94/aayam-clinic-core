@@ -1,5 +1,6 @@
 export interface OrgOrderNoDto {
     no: number,
     patientNo: number,
-    departmentNo : number
+    departmentNo : number,
+    userTypeNo : number
 }

@@ -8,3 +8,4 @@ export * from './appointment';
 export * from './key-value.vo';
 export * from './metadata-org.vo';
 export * from './department.vo';
+export * from './user-type.vo';
