@@ -9,3 +9,4 @@ export * from './health-params.const';
 export * from './department-status.const';
 export * from './shift.const';
 export * from './patient-type.const';
+export * from './user-type-status.const';
