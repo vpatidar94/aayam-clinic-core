@@ -1,3 +1,5 @@
+import { DepartmentVo } from "../vo/department.vo";
+
 export interface UserTypeVo {
     _id: string; // usertype id
 
@@ -15,3 +17,7 @@ export interface UserTypeVo {
     modified: Date;
     created: Date;
 }
+
+export interface UserTypePopulateVo extends UserTypeVo {
+    Department?: DepartmentVo;
+  }
