@@ -4,7 +4,7 @@ import { UserIncomeVo } from "./user-income.vo";
 
 export interface UserAccountVo {
     _id: string;
-    uid: string,
+    userId: string,
     salaryType: string,
     bankDetail: UserBankDetailVo,
     income: UserIncomeVo,

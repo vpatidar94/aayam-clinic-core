@@ -1,6 +1,7 @@
 export interface UserIncomeVo {
-    basicSalary: Number,
-    da: Number,
-    hra: Number,
-    others: Number
+    basicSalary: number,
+    da: number,
+    hra: number,
+    others: number,
+    total: number
 }

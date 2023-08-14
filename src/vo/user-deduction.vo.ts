@@ -1,6 +1,6 @@
 export interface UserDeductionVo {
-    tds: Number,
-    pf: Number,
-    professinalTax: Number,
-    leaveDeduction: Number 
+    tds: number,
+    pf: number,
+    professinalTax: number,
+    leaveDeduction: number 
 }
