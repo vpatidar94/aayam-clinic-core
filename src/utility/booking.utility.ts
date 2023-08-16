@@ -24,7 +24,7 @@ export class BookingUtility {
                 const orderItem = {} as OrderItemVo;
                 orderItem.item = item;
                 orderItem.qty = qty;
-                orderItem.priceBase = item?.price ?? 0; // base price copied to orderItem base price
+                orderItem.priceBase = item?.fee ?? 0; // base price copied to orderItem base price
                 orderItem.amount = orderItem.priceBase * orderItem.qty;
                 orderItem.note = note;
                 booking?.items?.push(orderItem);
