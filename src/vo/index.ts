@@ -12,3 +12,4 @@ export * from './user-type.vo';
 export * from './user-account.vo'
 export * from './user-income.vo'
 export * from './user-deduction.vo'
+export * from './service-type.vo'
