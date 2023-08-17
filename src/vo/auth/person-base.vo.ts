@@ -12,6 +12,7 @@ export interface PersonBaseVo {
     fatherName: string | null | undefined;
 
     cell: string;
+    code: string;
     email: string | null | undefined;
     cell2: string;
     email2: string | null | undefined; // unverified

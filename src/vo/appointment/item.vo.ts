@@ -1,4 +1,5 @@
 import { UserVo } from "../auth";
+import { PercentFlatVo } from "../percent-flat.vo";
 
 export interface ItemVo {
   _id: string;
@@ -10,7 +11,7 @@ export interface ItemVo {
   name: string;
   code: string;
   fee: number;
-  feeType: String;
+  feeType: PercentFlatVo;
   doctorFee: number,
   orgFee: number,
   status: String,
