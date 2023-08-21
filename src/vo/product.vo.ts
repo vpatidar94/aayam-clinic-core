@@ -1,4 +1,5 @@
 export interface ProductVo {
+  _id: string;
   orgId: string;
   brId: string;
   name: string;

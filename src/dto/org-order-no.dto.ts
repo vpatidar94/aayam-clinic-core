@@ -4,5 +4,6 @@ export interface OrgOrderNoDto {
     departmentNo : number,
     userTypeNo : number,
     serviceTypeNo : number,
-    userNo : number
+    userNo : number,
+    productNo : number
 }

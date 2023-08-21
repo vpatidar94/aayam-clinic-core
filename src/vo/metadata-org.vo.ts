@@ -9,5 +9,6 @@ export interface MetadataOrgVo {
     departmentNo : number,
     userTypeNo : number,
     serviceTypeNo : number,
-    userNo : number
+    userNo : number,
+    productNo : number
 }

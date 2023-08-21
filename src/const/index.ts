@@ -11,3 +11,4 @@ export * from './shift.const';
 export * from './patient-type.const';
 export * from './user-type-status.const';
 export * from './service-type-status.const';
+export * from './product-status.const';
