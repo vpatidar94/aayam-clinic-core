@@ -6,6 +6,7 @@ export interface TxVo {
 
   orgId: string | null | undefined;
   brId: string | null | undefined;
+  bookingId: string | null | undefined;
 
   deviceId: string | null | undefined;
   registerId: string | null | undefined;

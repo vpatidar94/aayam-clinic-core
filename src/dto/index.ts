@@ -24,4 +24,5 @@ export * from './user-cust.dto';
 export * from './org-booking.dto';
 export * from './org-booking-count.dto';
 export * from './user-type-detail.dto';
+export * from './booking-add-transaction-dto';
 
