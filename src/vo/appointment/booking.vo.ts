@@ -48,6 +48,7 @@ export interface BookingVo {
   serviceFee: number; // service charge / service fee
   discountCash: number; // ?
   totalDue: number;
+  totalPaid: number;
 
   crtBy: string;
   created: Date;
