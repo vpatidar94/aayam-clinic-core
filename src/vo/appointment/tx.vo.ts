@@ -2,7 +2,7 @@
  * TxCust >> [txId] >> tx detail
  */
 export interface TxVo {
-  id: string;
+  _id: string;
 
   orgId: string | null | undefined;
   brId: string | null | undefined;
