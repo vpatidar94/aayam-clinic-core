@@ -12,3 +12,5 @@ export * from './patient-type.const';
 export * from './user-type-status.const';
 export * from './service-type-status.const';
 export * from './product-status.const';
+export * from './tx-status.const';
+export * from './order-status.const';
