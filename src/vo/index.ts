@@ -14,4 +14,5 @@ export * from './user-income.vo';
 export * from './user-deduction.vo';
 export * from './service-type.vo';
 export * from './percent-flat.vo';
-export * from './product.vo'
+export * from './product.vo';
+export * from './order.vo';

@@ -1,10 +1,11 @@
 import { UserVo } from "../auth";
+import { OrderVo } from "../order.vo";
 import { ObservationVo } from "./observation.vo";
 import { OrderItemVo } from "./order-item.vo";
 import { PrescriptionVo } from "./prescription.vo";
 import { TxVo } from "./tx.vo";
 
-export interface BookingVo {
+export interface BookingVo extends OrderVo {
   _id: string;
 
   orgId: string;
