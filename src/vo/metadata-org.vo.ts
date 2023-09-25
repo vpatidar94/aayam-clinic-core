@@ -11,5 +11,6 @@ export interface MetadataOrgVo {
     serviceTypeNo : number,
     serviceItemNo : number,
     userNo : number,
-    productNo : number
+    productNo : number,
+    pharmacyOrderNo : number
 }

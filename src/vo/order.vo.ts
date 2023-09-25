@@ -2,12 +2,14 @@ import { OrderItemVo } from "./appointment/order-item.vo";
 import { TxVo } from "./appointment/tx.vo";
 
 export interface OrderVo {
+  _id: string;
+
   orgId: string;
   brId: string;
   user: string; // patient id 
-
-  no: string; // ????
   
+  status: string; // OrderStatus - [PENDING, CONFIRMED, COMPLETED]
+
   txStatus: string; // OrderStatusTx - [UNPAID, PAID, PAID_PARTLY, VOID]
   items: Array<OrderItemVo>;
   tx: Array<TxVo>;
@@ -33,4 +35,3 @@ export interface OrderVo {
 
   note: string;
 }
-

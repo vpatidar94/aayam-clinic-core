@@ -16,3 +16,4 @@ export * from './service-type.vo';
 export * from './percent-flat.vo';
 export * from './product.vo';
 export * from './order.vo';
+export * from './pharmacy-order.vo';
