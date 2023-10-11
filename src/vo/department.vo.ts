@@ -6,6 +6,8 @@ export interface DepartmentVo {
     orgId: string; // organization - department associated with
     brId: string; // associated branch of the organization
 
+    type: string; // PATIENT_RELATED, NON_PATIENT_RELATED
+
     // Department Information
     name: string;
     code: string;
