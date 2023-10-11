@@ -22,8 +22,7 @@ export interface BookingVo extends OrderVo{
 
   type: string; // PATIENT, APPOINTMENT
   subType: string; // OPD, ADMISSION, INVESTIGATION, EMERGENCY
-
-
+  departmentId: string;
 
   observation: ObservationVo,
 
