@@ -13,3 +13,8 @@ export const DEPT_LIST = [
         label: 'Non Patient Related'
     },
 ];
+
+export const DEPT_NAME = {
+    PATIENT_RELATED: 'Patient Related',
+    NON_PATIENT_RELATED: 'Non Patient Related'
+};
