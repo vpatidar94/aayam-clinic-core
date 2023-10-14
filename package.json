@@ -1,6 +1,6 @@
 {
   "name": "aayam-clinic-core",
-  "version": "0.0.95",
+  "version": "0.0.99",
   "description": "aayam-clinic-core js module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -14,7 +14,7 @@ export interface BookingVo extends OrderVo{
   timeSlot: string;
   chargable: boolean;
 
-  dr: Array<string>; // Doctor Id
+  dr: string; // Doctor Id
   drExt: Array<string>;
   referedBy: string;
   complaint: Array<string>;
@@ -38,5 +38,5 @@ export interface BookingVo extends OrderVo{
 
 export interface BookingPopulateVo extends BookingVo {
   patient: UserVo;
-  drList: Array<UserVo>;
+  drDetail: UserVo;
 }
