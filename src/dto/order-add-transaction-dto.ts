@@ -1,7 +1,7 @@
 
 
 export interface OrderAddTransactionDto {
-    orderId : String,
+    orderId : string,
     amount : number,
     paymentMode : string
 }

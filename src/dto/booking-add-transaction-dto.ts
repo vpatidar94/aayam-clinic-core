@@ -1,7 +1,7 @@
 
 
 export interface BookingAddTransactionDto {
-    bookingId : String,
+    bookingId : string,
     amount : number,
     paymentMode : string
 }

@@ -14,12 +14,12 @@ export interface ItemVo {
   feeType: PercentFlatVo;
   doctorFee: number,
   orgFee: number,
-  status: String,
+  status: string,
   del: Boolean,
-  modBy:  String,
-  crtBy:  String
-  modified: String,
-  created: String
+  modBy: string,
+  crtBy: string
+  modified: string,
+  created: string
 }
 
 

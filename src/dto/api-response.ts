@@ -13,7 +13,7 @@ export class ApiResponse<T> {
   code: number;
   status: string;
   body: T | null;
-  data: any; // Map<String, Object>
+  data: any; // Map<string, Object>
   msg: Array<Message> | null; // List<Message>
   errorMessage: string | null;
 
