@@ -1,6 +1,7 @@
 import {AclVo} from './acl.vo';
 import {AclCustVo} from './acl-cust.vo';
 import {PersonBaseVo} from './person-base.vo';
+import { UserServiceTimingVo } from '../user-service-timing.vo';
 
 export interface UserVo extends PersonBaseVo {
     /* use this id to link other user profile with main profile */
@@ -19,4 +20,8 @@ export interface UserVo extends PersonBaseVo {
 
     crtBy: string | null | undefined;
     created: Date;
+
+    serviceTiming: Array<UserServiceTimingVo>;
+    minutesPerPatient: number; // Time taken by doc to check one patient
+
 }

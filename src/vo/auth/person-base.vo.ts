@@ -1,5 +1,4 @@
 import { AddressVo } from "../address.vo";
-import { UserServiceTimingVo } from "../user-service-timing.vo";
 
 export interface PersonBaseVo {
     _id: string;
@@ -24,7 +23,6 @@ export interface PersonBaseVo {
     poB: string | null | undefined; // Place of Birth
     gender: string | null | undefined; // Gender
     address: AddressVo | null | undefined;
-    serviceTiming: Array<UserServiceTimingVo>;
     age: number | null | undefined;
 
 }
