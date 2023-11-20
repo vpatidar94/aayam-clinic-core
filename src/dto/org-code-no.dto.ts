@@ -1,4 +1,4 @@
-export interface OrgOrderNoDto {
+export interface OrgCodeNoDto {
     no: number,
     patientNo: number,
     departmentNo : number,
@@ -7,5 +7,6 @@ export interface OrgOrderNoDto {
     serviceItemNo : number,
     userNo : number,
     productNo : number,
-    pharmacyOrderNo : number
+    pharmacyOrderNo: number,
+    testNo: number
 }

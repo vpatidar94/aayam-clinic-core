@@ -17,3 +17,8 @@ export * from './percent-flat.vo';
 export * from './product.vo';
 export * from './order.vo';
 export * from './pharmacy-order.vo';
+export * from './investigation-param.vo';
+export * from './investigation-group.vo';
+export * from './investigation-criteria.vo';
+
+
