@@ -20,14 +20,14 @@ export interface OrgVo {
 
     icon: string | null | undefined; // img file name // circle or square in shape
     logo: string | null | undefined; // img file name
-    cover: string | null | undefined; // img file name
+    cover: string | null | undefined; // img file name'
 
     address: AddressVo | null | undefined;
 
     domain: string | null | undefined;
     tagline: string | null | undefined; // Business Tagline
 
-    est: Date | null | undefined;
+    gst: Date | null | undefined;
     reg: string | null | undefined; // registration
 
     ph: string | null | undefined;
@@ -40,4 +40,12 @@ export interface OrgVo {
     crtBy: string | null | undefined;
     modified: Date;
     created: Date;
+
+    adminName: string | null | undefined;
+    adminCells: string | null | undefined;
+    adminDesignation: string | null | undefined;
+
+    expiryPanel: Date | null | undefined;
+    category: string | null | undefined; // BASIC, STARTER, ENTERPRISE, PREMIUM
+
 }

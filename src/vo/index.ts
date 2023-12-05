@@ -21,4 +21,3 @@ export * from './investigation-param.vo';
 export * from './investigation-group.vo';
 export * from './investigation-criteria.vo';
 
-
