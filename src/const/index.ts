@@ -14,3 +14,4 @@ export * from './service-type-status.const';
 export * from './product-status.const';
 export * from './tx-status.const';
 export * from './order-status.const';
+export * from './org-plan-category.const';

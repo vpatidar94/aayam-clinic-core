@@ -17,7 +17,7 @@ export interface PersonBaseVo {
     email2: string | null | undefined; // unverified
 
     img: string | null | undefined;
-    x: string | null | undefined;
+    imgIdProof: string | null | undefined;
     doB: Date; // Date of Birth
     doD: Date; // Date of Death
     doA: Date; // Date of Anniversary

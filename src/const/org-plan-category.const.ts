@@ -12,7 +12,7 @@ export const PLAN_NAME = {
     PREMIUM: 'Premium'
 };
 
-export const HEALTH_PARAMS_LIST = [
+export const PLAN_LIST = [
 
     {
         id: PLAN.BASIC,

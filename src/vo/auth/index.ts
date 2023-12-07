@@ -3,3 +3,4 @@ export * from './acl-cust.vo';
 export * from './user.vo';
 export * from './person-base.vo';
 export * from './user-auth.vo';
+export * from './user-otp.vo';

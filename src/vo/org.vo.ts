@@ -27,8 +27,9 @@ export interface OrgVo {
     domain: string | null | undefined;
     tagline: string | null | undefined; // Business Tagline
 
-    gst: Date | null | undefined;
+    est: Date | null | undefined;
     reg: string | null | undefined; // registration
+    gst: string | null | undefined; // registration
 
     ph: string | null | undefined;
     email: string | null | undefined;
@@ -42,7 +43,7 @@ export interface OrgVo {
     created: Date;
 
     adminName: string | null | undefined;
-    adminCells: string | null | undefined;
+    adminCell: string | null | undefined;
     adminDesignation: string | null | undefined;
 
     expiryPanel: Date | null | undefined;
