@@ -21,4 +21,6 @@ export interface OrderItemVo {
 
   openItem: boolean;
   name: string;
+
+  sampleCollectDate: Date | null;
 }

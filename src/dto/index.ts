@@ -27,4 +27,6 @@ export * from './user-type-detail.dto';
 export * from './booking-add-transaction-dto';
 export * from './order-add-transaction-dto';
 export * from './asset-upload.dto';
+export * from './department-permission.dto';
+
 

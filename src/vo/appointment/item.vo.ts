@@ -1,4 +1,5 @@
 import { UserVo } from "../auth";
+import { InvestigationParamVo } from "../investigation-param.vo";
 import { PercentFlatVo } from "../percent-flat.vo";
 
 export interface ItemVo {
@@ -12,14 +13,15 @@ export interface ItemVo {
   code: string;
   fee: number;
   feeType: PercentFlatVo;
-  doctorFee: number,
-  orgFee: number,
-  status: string,
-  del: Boolean,
-  modBy: string,
+  doctorFee: number;
+  orgFee: number;
+  status: string;
+  del: boolean;
+  modBy: string;
   crtBy: string
-  modified: string,
-  created: string
+  modified: string;
+  created: string;
+  investigationParam: InvestigationParamVo | null | undefined;
 }
 
 

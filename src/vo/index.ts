@@ -20,4 +20,6 @@ export * from './pharmacy-order.vo';
 export * from './investigation-param.vo';
 export * from './investigation-group.vo';
 export * from './investigation-criteria.vo';
+export * from './user-permission.vo';
+export * from './department-permission.vo';
 

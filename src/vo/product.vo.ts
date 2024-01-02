@@ -7,9 +7,10 @@ export interface ProductVo {
   drug: string;
   productType: string;
   company: string;
+  packagingType: string;
   price: number;
-  qtyPerStrip: number;
-  pricePerStrip: number;
+  qtyPerPackage: number;
+  pricePerPackage: number;
   purchaseDate: Date;
   expirtyDate: Date;
   status: string;
